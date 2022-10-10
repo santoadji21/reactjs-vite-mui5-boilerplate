@@ -7,20 +7,20 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "allowJs": true,
-    "checkJs": true,
+    "jsx": "preserve",
+    "checkJs": false,
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@/*": ["src/*"],
-      "@components/*": ["src/components/*"],
-      "@atoms/*": ["src/components/atoms/*"],
-      "@molecules/*": ["src/components/molecules/*"],
-      "@organisms/*": ["src/components/organisms/*"],
-      "@templates/*": ["src/components/templates/*"],
-      "@pages/*": ["src/pages/*"],
-      "@utils/*": ["src/utils/*"],
-      "@themes/*": ["src/themes/*"]
+      "@/components/*": ["./components/*"],
+      "@/atoms/*": ["./components/atoms/*"],
+      "@/molecules/*": ["./components/molecules/*"],
+      "@/organisms/*": ["./components/organisms/*"],
+      "@/templates/*": ["./components/templates/*"],
+      "@/pages/*": ["./pages/*"],
+      "@/utils/*": ["./utils/*"],
+      "@/themes/*": ["./themes/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
